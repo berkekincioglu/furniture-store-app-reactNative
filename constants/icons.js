@@ -5,6 +5,7 @@ import user from '../assets/icons/user_icon.png';
 import cart from '../assets/icons/cart_icon.png';
 import dashboard from '../assets/icons/dashboard_icon.png';
 import menu from '../assets/icons/menu_icon.png';
+import back from '../assets/icons/back_icon.png';
 
 export default {
   search,
@@ -14,4 +15,5 @@ export default {
   cart,
   dashboard,
   menu,
+  back,
 };
