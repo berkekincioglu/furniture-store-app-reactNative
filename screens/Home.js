@@ -211,10 +211,7 @@ const Home = () => {
     },
   ]);
 
-  const [selectedTab, setSelectedTab] = useState({
-    id: 0,
-    name: 'Chair',
-  });
+  const [selectedTab, setSelectedTab] = useState(tabs[0]);
 
   const renderTitle = title => {
     return (
@@ -280,6 +277,7 @@ const Home = () => {
           padding: SIZES.radius,
           backgroundColor: COLORS.white,
           borderRadius: 20,
+          marginBottom: SIZES.padding,
           ...styles.shadow,
         }}>
         <View
@@ -344,7 +342,12 @@ const Home = () => {
         />
       </View>
       {/* Footer */}
-      <View style={{flex: 1, justifyContent: 'flex-end'}}>
+      <View
+        style={{
+          maxHeight: '20%',
+          height: '20%',
+          justifyContent: 'flex-end',
+        }}>
         {renderPromotionCard()}
       </View>
     </SafeAreaView>
